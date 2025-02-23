@@ -23,7 +23,7 @@ The system incorporates encryption techniques for secure password storage and au
 1. *Clone the Repository*:
    sh
    git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
-   cd NID-Management-System
+   cd Software-Development-Project-I
    
 2. *Install OpenSSL (If not installed)*:
    sh
