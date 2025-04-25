@@ -8,7 +8,7 @@ The system incorporates encryption techniques for secure password storage and au
 ## 📑 Features
 - *Citizen Management*: Register, update, search, and delete citizen records.
 - *Unique NID Generation*: Automatically assigns a unique National ID (NID) to each citizen.
-- *Role-Based Access*: Supports different user roles (Admin, Officer, Auditor).
+- *Role-Based Access*: Supports different user roles (Admin).
 - *Secure Authentication*: Uses SHA-256 hashing with salt for password security.
 - *Audit Logging*: Tracks all operations performed on citizen records.
 - *Validation Checks*: Ensures correct input formats for date, gender, and blood group.
@@ -19,25 +19,25 @@ The system incorporates encryption techniques for secure password storage and au
 - *Data Structures*: Structs for user, citizen, and audit logs
 - *File Handling*: (Optional) Future enhancement for persistent storage
 
-## 📌 Installation & Compilation
-1. *Clone the Repository*:
-   sh
-   git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
-   cd Software-Development-Project-I
-   
-2. *Install OpenSSL (If not installed)*:
-   sh
-   sudo apt install libssl-dev  # For Linux
-   
-3. *Compile the Program*:
-   sh
-   gcc nid_management.c -o nid_system -lssl -lcrypto
-   
-4. *Run the Program*:
-   sh
-   ./nid_system
-   
+## 🚀 Installation (Ubuntu/Linux)
 
+### Prerequisites
+
+sudo apt update
+sudo apt install build-essential libssl-dev libsqlite3-dev
+
+## Compilation & Execution
+
+# Clone repository
+git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
+cd Software-Development-Project-I
+
+# Compile with security flags
+gcc national_id_system.c -o nid_system -lcrypto -lsqlite3 -Wall -Wextra -O2
+
+# Run the system
+./nid_system
+   
 ## 🔐 User Roles & Authentication
 - *Admin*: Full access to all operations.
 - *Officer*: Limited access to citizen data.
