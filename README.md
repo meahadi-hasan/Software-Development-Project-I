@@ -23,20 +23,21 @@ The system incorporates encryption techniques for secure password storage and au
 
 ### Prerequisites
 
-sudo apt update
-sudo apt install build-essential libssl-dev libsqlite3-dev
+`sudo apt update
+sudo apt install build-essential libssl-dev libsqlite3-dev`
 
 ## Compilation & Execution
 
 # Clone repository
-git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
-cd Software-Development-Project-I
+`git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
+cd Software-Development-Project-I`
 
 # Compile with security flags
-gcc national_id_system.c -o nid_system -lcrypto -lsqlite3 -Wall -Wextra -O2
+`nano national_id_system.c
+gcc national_id_system.c -o national_id_system -lcrypto -lsqlite3`
 
 # Run the system
-./nid_system
+`./national_id_system`
    
 ## 🔐 User Roles & Authentication
 - *Admin*: Full access to all operations.
