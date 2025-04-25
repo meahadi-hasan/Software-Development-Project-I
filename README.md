@@ -22,22 +22,21 @@ The system incorporates encryption techniques for secure password storage and au
 ## 🚀 Installation (Ubuntu/Linux)
 
 ### Prerequisites
-
-`sudo apt update
-sudo apt install build-essential libssl-dev libsqlite3-dev`
+    sudo apt update
+    sudo apt install build-essential libssl-dev libsqlite3-dev
 
 ## Compilation & Execution
 
 # Clone repository
-`git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
-cd Software-Development-Project-I`
+    git clone https://github.com/meahadi-hasan/Software-Development-Project-I.git
+    cd Software-Development-Project-I
 
 # Compile with security flags
-`nano national_id_system.c
-gcc national_id_system.c -o national_id_system -lcrypto -lsqlite3`
+    nano national_id_system.c
+    gcc national_id_system.c -o national_id_system -lcrypto -lsqlite3
 
 # Run the system
-`./national_id_system`
+    ./national_id_system
    
 ## 🔐 User Roles & Authentication
 - *Admin*: Full access to all operations.
